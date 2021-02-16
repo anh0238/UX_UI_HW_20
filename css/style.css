@@ -86,199 +86,23 @@ li {
     margin-bottom: 0px;
 }
 
-/* HERO IMAGE ----> */
-#heroImage {
-    height: 500px;
-    width: 100%;
-    background-color: #e8dce5;
-    display: flex;
 
-}
-
-#aboutText {
-    float: left;
-    display: flex;
+/* Navigation for Case Study Page ----> */
+#navbar-caseStudy {
     justify-content: flex-end;
-    flex-direction: column;
-    padding: 80px;
 }
 
-#aboutImage {
-    padding-right: 80px;
-    padding-bottom: 20px;
-    display: flex;
-    align-items: center;  
-} 
-
-/* MAIN CONTENT ----> */
-/* SKILLS ----> */
-
-#mySkills {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+a.nav-link {
+    color:#414042 !Important;
 }
 
-#mySkills p {
-    text-align: center;
+a.nav-link.active {
+    background-color:#c4ab2f !Important;
 }
 
-.download {
-    background-color: #c4ab2f;
-    font-family: champagneLimousines;
-    color: #414042;
-    font-size: 16px;
-    border: 1px #c4ab2f;
-    border-radius: 12px;
-    padding: 10px;
-    transition-duration: .3s;
-    box-shadow: none;
-}
-
-.download:hover {
-    background-color: #414042;
-    color: #c4ab2f;
-}
-
-/* MY WORK ----> */
-#myWork {
-    display: flex;
-    flex-direction: column; 
-    padding-top: 50px;
-}
-
-#workHeadline {
-    align-self: center;
-    padding-bottom: 20px;
-}
-
-.projectCards {
-
-}
-
-#cardOne {
-    height: 350px;
-    display: grid;
-    grid-template-columns: auto 30%;
-    grid-template-areas: "summaryOne projectOne";
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-#summaryOne {
-    grid-area: summaryOne;
-    background-color: #e8dce5;
-    display: flex;
-    flex-direction: column;
-}
-
-#projectOne {
-    grid-area: projectOne;
-    max-width: auto;
-    max-height: 350px;
-    background-color: #e8dce5;
-
-}
-
-.projectTitle {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-
-.projectSubtitle {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    padding-top: 0px;
-}
-
-.summaryInfo {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-#cardTwo {
-    height: 350px;
-    display: grid;
-    grid-template-columns: 30% auto;
-    grid-template-areas: "projectTwo summaryTwo";
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-#summaryTwo {
-    grid-area: summaryTwo;
-    background-color: #e8dce5;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-}
-
-#summaryInfoTwo {
-    text-align: right;
-    max-width: 80%;
-}
-
-#projectTwo {
-    grid-area: projectTwo;
-    max-width: auto;
-    max-height: 350px;
-    background-color: #e8dce5;
-}
-
-#buttonProjectTwo {
-    align-self: flex-end;
-}
-
-#cardThree {
-    height: 350px;
-    display: grid;
-    grid-template-columns: auto 30%;
-    grid-template-areas: "summaryThree projectThree";
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-#summaryThree {
-    grid-area: summaryThree;
-    background-color: #e8dce5;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;  
-}
-
-#projectThree {
-    grid-area: projectThree;
-    max-width: auto;
-    max-height: 350px;
-    background-color: #e8dce5;
-}
-
-.moreDetails {
-    background-color: white;
-    font-family: champagneLimousines;
-    color: #414042;
-    font-size: 16px;
-    border: 1px white;
-    border-radius: 12px;
-    padding: 10px;
-    margin: 10px;
-    transition-duration: .3s;
-    box-shadow: none;
-    align-self: flex-start;
-}
-
-.moreDetails:hover {
-    background-color: #414042;
-    color: white;
+/* Jumbotron Sections ----> */
+.jumbotron {
+    background-color:#e8dce5 !Important;
 }
 
 .viewAllWork {
@@ -344,109 +168,11 @@ footer {
     width: .5%;
 }
 
+
+
 /* FOR MOBILE ----> */
 @media only screen and (max-width: 600px) {
 
-/* HERO IMAGE ----> */
-#heroImage {
-    height: auto;
-    width: 100%;
-    background-color: #e8dce5;
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-#aboutText {
-    justify-content: center;
-    margin-top: 0px; 
-    padding-top: 0px;
-}
-
-#aboutImage {
-align-self: flex-end;
-margin-top: 60px;
-margin-bottom: 0px;
-padding-bottom: 0px;
-} 
-
-#headshot {
-    width: 100px;
-    height: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.download {
-    background-color: #c4ab2f;
-    font-family: champagneLimousines;
-    color: #414042;
-    font-size: 16px;
-    border: 1px #c4ab2f;
-    border-radius: 12px;
-    padding: 10px;
-    transition-duration: .3s;
-    box-shadow: none;
-    margin-bottom: 40px;
-}
-
-.download:hover {
-    background-color: #414042;
-    color: #c4ab2f;
-}
-
-/* MY WORK ----> */
-.projectCards {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "cardOne"
-    "cardTwo"
-    "cardThree"
-    ;
-
-}
-
-#cardOne {
-    grid-area: "cardOne";
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
-#projectOne {
-    display: none;
-}
-
-#buttonProjectOne {
-    margin-bottom: 60px;
-}
-
-.summaryInfo {
-    height: auto;
-}
-
-#cardTwo {
-    grid-area: "cardTwo";
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
-#projectTwo {
-    display: none;
-}
-
-#cardThree {
-    grid-area: "cardThree";
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
-#projectThree {
-    display: none;
-}
 
 #footerContent {
     background-color: #414042;
@@ -456,12 +182,5 @@ padding-bottom: 0px;
     align-items: center;
     justify-content: center;
 }
-
-
-
-
-
-
-
 
 }
