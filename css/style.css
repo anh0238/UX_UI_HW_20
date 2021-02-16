@@ -89,7 +89,7 @@ li {
 
 /* Navigation for Case Study Page ----> */
 #navbar-caseStudy {
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 a.nav-link {
@@ -97,6 +97,10 @@ a.nav-link {
 }
 
 a.nav-link.active {
+    background-color: transparent !Important;
+}
+
+a.nav-link:hover {
     background-color:#c4ab2f !Important;
 }
 
