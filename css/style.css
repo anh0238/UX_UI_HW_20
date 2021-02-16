@@ -1,0 +1,467 @@
+/* WEBSITE ----> */
+@font-face {
+    font-family: champagneLimousines;
+    src: url(../assets/champagne_limousines/Champagne\ &\ Limousines.ttf);
+    /* src: url(../assets/champagne_limousines/Champagne\ &\ Limousines\ Bold.ttf);
+    src: url(../assets/champagne_limousines/Champagne\ &\ Limousines\ Bold\ Italic.ttf);
+    src: url(../assets/champagne_limousines/Champagne\ &\ Limousines\ Italic.ttf); */
+}
+
+@font-face {
+    font-family: champagneLimousinesItalic;
+    src: url(../assets/champagne_limousines/Champagne\ &\ Limousines\ Italic.ttf); 
+}
+
+@font-face {
+    font-family: champagneLimousinesBold;
+    src: url(../assets/champagne_limousines/Champagne\ &\ Limousines\ Bold.ttf);
+}
+
+@font-face {
+    font-family: nixieOne;
+    src: url(../assets/nixie_one/NixieOne-Regular.ttf);
+}
+
+* { margin: 0; padding: 0; }
+
+body {
+    background-color: white;
+}
+
+h1 {
+    font-family: champagneLimousines;
+    color: #ef4136;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: champagneLimousines;
+    color: #414042;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: champagneLimousinesBold;
+    color: #414042;
+    font-size: 24px;
+}
+
+h4 {
+    font-family: champagneLimousinesItalic;
+    color: #414042;
+    font-size: 24px;
+}
+
+p {
+    font-family: nixieOne;
+    font-size: 16px;
+}
+
+/* HEADER ----> */
+header {
+    background-color: #414042;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+ul {
+    font-family: champagneLimousines;
+    color: #e8dce5;
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+
+li {
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+/* HERO IMAGE ----> */
+#heroImage {
+    height: 500px;
+    width: 100%;
+    background-color: #e8dce5;
+    display: flex;
+
+}
+
+#aboutText {
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 80px;
+}
+
+#aboutImage {
+    padding-right: 80px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;  
+} 
+
+/* MAIN CONTENT ----> */
+/* SKILLS ----> */
+
+#mySkills {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mySkills p {
+    text-align: center;
+}
+
+.download {
+    background-color: #c4ab2f;
+    font-family: champagneLimousines;
+    color: #414042;
+    font-size: 16px;
+    border: 1px #c4ab2f;
+    border-radius: 12px;
+    padding: 10px;
+    transition-duration: .3s;
+    box-shadow: none;
+}
+
+.download:hover {
+    background-color: #414042;
+    color: #c4ab2f;
+}
+
+/* MY WORK ----> */
+#myWork {
+    display: flex;
+    flex-direction: column; 
+    padding-top: 50px;
+}
+
+#workHeadline {
+    align-self: center;
+    padding-bottom: 20px;
+}
+
+.projectCards {
+
+}
+
+#cardOne {
+    height: 350px;
+    display: grid;
+    grid-template-columns: auto 30%;
+    grid-template-areas: "summaryOne projectOne";
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#summaryOne {
+    grid-area: summaryOne;
+    background-color: #e8dce5;
+    display: flex;
+    flex-direction: column;
+}
+
+#projectOne {
+    grid-area: projectOne;
+    max-width: auto;
+    max-height: 350px;
+    background-color: #e8dce5;
+
+}
+
+.projectTitle {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.projectSubtitle {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+}
+
+.summaryInfo {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#cardTwo {
+    height: 350px;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-areas: "projectTwo summaryTwo";
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#summaryTwo {
+    grid-area: summaryTwo;
+    background-color: #e8dce5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+#summaryInfoTwo {
+    text-align: right;
+    max-width: 80%;
+}
+
+#projectTwo {
+    grid-area: projectTwo;
+    max-width: auto;
+    max-height: 350px;
+    background-color: #e8dce5;
+}
+
+#buttonProjectTwo {
+    align-self: flex-end;
+}
+
+#cardThree {
+    height: 350px;
+    display: grid;
+    grid-template-columns: auto 30%;
+    grid-template-areas: "summaryThree projectThree";
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#summaryThree {
+    grid-area: summaryThree;
+    background-color: #e8dce5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;  
+}
+
+#projectThree {
+    grid-area: projectThree;
+    max-width: auto;
+    max-height: 350px;
+    background-color: #e8dce5;
+}
+
+.moreDetails {
+    background-color: white;
+    font-family: champagneLimousines;
+    color: #414042;
+    font-size: 16px;
+    border: 1px white;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+    transition-duration: .3s;
+    box-shadow: none;
+    align-self: flex-start;
+}
+
+.moreDetails:hover {
+    background-color: #414042;
+    color: white;
+}
+
+.viewAllWork {
+    width: 60%;
+    background-color: #c4ab2f;
+    font-family: champagneLimousines;
+    color: #414042;
+    font-size: 16px;
+    border: 1px #c4ab2f;
+    border-radius: 12px;
+    padding: 10px;
+    transition-duration: .3s;
+    box-shadow: none;
+    align-self: center;
+}
+
+.viewAllWork:hover {
+    background-color: #414042;
+    color: #c4ab2f;
+}
+
+/* CONTACT ----> */
+#contact {
+    background-color: #e8dce5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* FOOTER ----> */
+footer {
+    margin-top: 30px;
+}
+#footerContent {
+    background-color: #414042;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#footerMenu {
+    margin-top: 5px;;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+#copyright {
+    background-color: #e8dce5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+
+.extraSmall {
+    font-size: x-small;
+}
+#copyrightIcon {
+    width: .5%;
+}
+
+/* FOR MOBILE ----> */
+@media only screen and (max-width: 600px) {
+
+/* HERO IMAGE ----> */
+#heroImage {
+    height: auto;
+    width: 100%;
+    background-color: #e8dce5;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#aboutText {
+    justify-content: center;
+    margin-top: 0px; 
+    padding-top: 0px;
+}
+
+#aboutImage {
+align-self: flex-end;
+margin-top: 60px;
+margin-bottom: 0px;
+padding-bottom: 0px;
+} 
+
+#headshot {
+    width: 100px;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.download {
+    background-color: #c4ab2f;
+    font-family: champagneLimousines;
+    color: #414042;
+    font-size: 16px;
+    border: 1px #c4ab2f;
+    border-radius: 12px;
+    padding: 10px;
+    transition-duration: .3s;
+    box-shadow: none;
+    margin-bottom: 40px;
+}
+
+.download:hover {
+    background-color: #414042;
+    color: #c4ab2f;
+}
+
+/* MY WORK ----> */
+.projectCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "cardOne"
+    "cardTwo"
+    "cardThree"
+    ;
+
+}
+
+#cardOne {
+    grid-area: "cardOne";
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#projectOne {
+    display: none;
+}
+
+#buttonProjectOne {
+    margin-bottom: 60px;
+}
+
+.summaryInfo {
+    height: auto;
+}
+
+#cardTwo {
+    grid-area: "cardTwo";
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#projectTwo {
+    display: none;
+}
+
+#cardThree {
+    grid-area: "cardThree";
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#projectThree {
+    display: none;
+}
+
+#footerContent {
+    background-color: #414042;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+}
