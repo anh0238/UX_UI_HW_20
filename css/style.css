@@ -93,20 +93,20 @@ li {
 }
 
 a.nav-link {
-    color:#414042 !Important;
+    color:#414042 !important;
 }
 
 a.nav-link.active {
-    background-color: transparent !Important;
+    background-color: transparent !important;
 }
 
 a.nav-link:hover {
-    background-color:#c4ab2f !Important;
+    background-color:#c4ab2f;
 }
 
 /* Jumbotron Sections ----> */
 .jumbotron {
-    background-color:#e8dce5 !Important;
+    background-color:#e8dce5;
 }
 
 .viewAllWork {
@@ -160,7 +160,7 @@ footer {
 #copyright {
     background-color: #e8dce5;
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
     align-items: center;
     height: 20px;
 }
