@@ -19,26 +19,30 @@
     <body>
         <!-- UX Portfolio Website Header -->
         <header>
-            <ul>
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>WORK</li>
-                <li>CONTACT</li>
+            <ul class="navList">
+                <li class="navListItem">HOME</li>
+                <li class="navListItem">ABOUT</li>
+                <li class="navListItem">WORK</li>
+                <li class="navListItem">CONTACT</li>
             </ul>
         </header>
         <!-- End of UX Portfolio Website Footer -->
 
+
         <!-- Navigation for Page [Bootstrap] -->
-        <nav id="navbar-caseStudy" class="navbar navbar-light bg-light">
+        <nav id="navbar-caseStudy" class="navbar sticky-top navbar-light bg-light">
             <ul class="nav nav-pills">
               <li class="nav-item">
-                <a class="nav-link" href="#intro">Introduction</a>
+                <a class="nav-link" href="#overview">Overview</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#research">Research</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#pStatement">Problem Statement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ideation">Ideation</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#iterations">Iterations</a>
@@ -55,45 +59,81 @@
 
         <!-- Container for Content [Bootstrap Scrolling] -->
         <div data-spy="scroll" data-target="#navbar-caseStudy" data-offset="0">
-            <div id="intro" class="jumbotron jumbotron-fluid">
+            <div id="overview" class="jumbotron jumbotron-fluid">
                 <div class="container">
-                  <h1 class="display-4">Summary/Introduction</h1>
-                  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                  <h1 class="display-4">Project Overview</h1>
+                    <p>Looking for volunteer opportunities can be difficult and time consuming.
+                    <br>Use <b class="bold">CivicHelper</b>: The easy way to discover, schedule, and manage volunteer opportunities in your community.</p>
+                    <p>The CivicHelper was created as a result of in-depth user research and analysis to solve an identified need in our users' everyday lives.</p>
+                    <p>The project was completed over the course of three weeks as a group effort with two other students.</p>
+                    <p><b class="bold">Project Management Tools</b>: Zoom, Google Drive Suite, Trello, Slack
+                    <br><b class="bold">Design Tools</b>: Miro, Figma, Adobe XD</p>
+
                 </div>
               </div>
             
             <div id="research" class="jumbotron jumbotron-fluid">
                 <div class="container">
                   <h1 class="display-4">Research</h1>
-                  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                  <p>We conducted user interviews over Zoom to gain insight into what types of civic engagement users are interested in and their current frustrations with getting involved and finding ways to get involved. Our participants were between the ages of 28-40 and were all interested in civic engagement and volunteering. We focussed our interview questions off of three key objectives:
+                    <ol>
+                        <li>How involved is the User in their community?</li>
+                        <li>How does the User find opportunities to get involved?</li>
+                        <li>Does the User believe technology could improve civic engagement?</li>
+                    </ol>    
+                  </p>
+                  <p>In conducting our interviews, we found that all of the participants have experience volunteering and that they share a frequency rate of about once a month. There was also a shared sense of frustration around the process of finding volunteer opportunities and many shared that they currently utilize social media apps to stay informed. The main difference between participants was the specific cause that they each typically champion.</p>
+                  <p>We also conducted a competitor analysis, identifying VolunteerMatch and Facebook as our direct competitors and Instagram and GoVolunteer as our indirect competitors.</p>
+                  <p>We used the insights from our user research to gather data for our Empathy Map. The information was  organized in categories. Categories like demographics, user motivation, user thoughts on technology, volunteer engagement, and election related information, were helpful in finding the users' pains and gains.</p>
+
                 </div>
             </div>
 
             <div id="pStatement" class="jumbotron jumbotron-fluid">
                 <div class="container">
                   <h1 class="display-4">Problem Statement</h1>
-                  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                  <p>The Civic Helper was designed to achieve change in local communities by helping citizens stay informed of civic matters and ways to get involved. Currently, when looking to get involved with the community, it’s hard to know how and where to begin. How might we provide a more effective tool to eliminate community member confusion and poor civic involvement? Through the use of the Civic Helper Calendar Feature, we’ll be able to track civic engagement as users will be able to mark if they are attending.</p>
+                </div>
+            </div>
+
+            <div id="ideation" class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Ideation</h1>
+                  <p>Our user research informed our Feature Prioritization, User Scenario, and Storyboard. Our users wanted to find opportunities to volunteer in their community. The Feature Prioritization map aided in finding features that could be implemented in the CivicHelper that would create a calendar that would help the users manage, schedule, and find opportunities to volunteer. This is what drove our design choices and helped with creating a simplistic user flow.</p>
+                  <p>The User Flow was created in Miro. Our intention was to create a simplistic flow, as the goal of the CivicHelper was to simplify the process of finding and joining volunteer opportunities for the user. We found that our initial User Flow was too simplistic, as it did not consider users who may not want to move forward with using the application, or users who would want to create an account to save and manage their volunteer opportunities. After iterating our user flow, we found that although it was still simple, it fully covered the range of users and functionalities of the CivicHelper.</p>
+                  <p>Our team began the wireframing process by each drawing our own set of wireframes based off of the User Flow. We then shared our wireframes and discussed which frames we felt best illustrated the user flow and successfully captured the features of the CivicHelper. We then used Adobe XD to create a mid-fidelity prototype, complete with clickable actions and Material Design elements.</p>
                 </div>
             </div>
 
             <div id="iterations" class="jumbotron jumbotron-fluid">
                 <div class="container">
-                  <h1 class="display-4">Iterations</h1>
-                  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                  <h1 class="display-4">User Testing and Iterations</h1>
+                  <p>The user tests were conducted over Zoom in a group setting. Our goal was to determine if the CivicHelper user flow is working as intended for the user. We gained insightful feedback from the tests and used the feedback to help us determine what improvements could be made. We chose to make the following adjustments:
+                      <ul id="jumboList">
+                          <li class="jumboListItem">Label Calendar</li>
+                          <li class="jumboListItem">Build out functionality of Hamburger Menus</li>
+                          <li class="jumboListItem">Font size should be increased where possible</li>
+                          <li class="jumboListItem">Improve functionality of Calendar</li>
+                          <li class="jumboListItem">We need to change the bottom navigation to be all the same.</li>
+                          <li class="jumboListItem">Make "My Events" Scrollable</li>
+                          <li class="jumboListItem">Add Onboarding Process or Info Options to Prototype</li>
+                      </ul>
+                  </p>
+
                 </div>
             </div>
 
             <div id="prototype" class="jumbotron jumbotron-fluid">
                 <div class="container">
                   <h1 class="display-4">Final Prototype</h1>
-                  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                  <p>Our final prototype was created using Adobe XD. Lillian led the design process and took on the responsibility of ensuring continuity with animation and Material Design elements. Our final prototype can be viewed in <a href="https://xd.adobe.com/view/252017c5-2446-417d-aff0-6fa4fe737d18-7073/">Adobe XD</a>.</p>
                 </div>
             </div>
 
             <div id="future" class="jumbotron jumbotron-fluid">
                 <div class="container">
                   <h1 class="display-4">Future Considerations</h1>
-                  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                  <p>In conclusion, building the CivicHelper app was a great learning experience. Our team worked well together and utilized both group and individual working sessions. Our immediate next steps for CivicHelper would be to conduct another round of user testing with our final prototype. Then, once the app is fully built, we’d like to conduct trial runs with local non-profits as a way to introduce the CivicHelper tool into the market. We believe the CivicHelper will help to eliminate the time a user has to spend on researching and finding opportunities, so that that time can be used to actively volunteer, which will then increase the amount of volunteering in a given community.</p>
                 </div>
             </div>
           </div>
@@ -107,11 +147,11 @@
                 <h2><br>Email: anh0238@gmail.com     |    Phone: 651.558.1135</h2>
             </div>
             <div id="footerContent">
-                <ul id="footerMenu">
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>WORK</li>
-                    <li>CONTACT</li>
+                <ul id="footerMenu" class="navList">
+                    <li class="navListItem">HOME</li>
+                    <li class="navListItem">ABOUT</li>
+                    <li class="navListItem">WORK</li>
+                    <li class="navListItem">CONTACT</li>
                 </ul>
             </div>
             <div id="copyright">

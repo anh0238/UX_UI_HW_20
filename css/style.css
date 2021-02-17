@@ -67,7 +67,7 @@ header {
     align-items: flex-end;
 }
 
-ul {
+.navList {
     font-family: champagneLimousines;
     color: #e8dce5;
     font-size: 20px;
@@ -79,7 +79,7 @@ ul {
     padding-right: 10px;
 }
 
-li {
+.navListItem {
     padding-left: 20px;
     padding-right: 10px;
     padding-bottom: 0px;
@@ -87,9 +87,33 @@ li {
 }
 
 
+
+
+#jumboList {
+    padding-left: 20px;
+    font-family: nixieOne;
+    font-size: 16px;
+}
+
+
+ol {
+    padding-left: 20px;
+    font-family: nixieOne;
+    font-size: 16px;    
+}
+
+
+.bold {
+    font-weight: 900;
+}
+
 /* Navigation for Case Study Page ----> */
 #navbar-caseStudy {
     justify-content: flex-start;
+}
+
+.nav-item {
+    font-family: champagneLimousines;
 }
 
 a.nav-link {
